@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  color: #4a3428;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  background-color: #eeebe6e5;
+  backdrop-filter: blur(8px);  /*borrado do background*/ 
+  padding: 20px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border: 1px solid #4a342829;
+}
+
+.img-logo {
+  height: 80px;
+}
+
+.ul-nav {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.ul-nav a {
+  transition-duration: 0.5s;
+}
+
+.ul-nav a:hover {
+  color: #d4af37;
+
+}
+
+.btn-header {
+  padding: 8px 12px;
+  border-radius: 16px;
+  background-color: #4a3428;
+  color: #fff;
+}
+
+
+main {
+    background-color: #fff9f0;
+}
+
+.section-banner {
+  background-image: url(./assets/brownie-banner.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  gap: 30px;
+  position: relative;
+
+}
+
+.div-banner {
+  position: absolute;
+  background-color: #00000062;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+}
+
+.section-banner h1 {
+  font-size: 60px;
+  width: 17ch; /* ch: character */
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.section-banner h2 {
+  color: #fff;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.section-banner a {
+  color: #fff;
+  background-color: #4a3428;
+  padding: 20px 40px;
+  border-radius: 32px;
+  z-index: 1;
+  transition-duration: 0.5s;
+}
+
+.section-banner a:hover {
+  background-color: #2d1e16;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.section-sobre-nos {
+  padding: 64px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-sobre-nos img {
+  height: 500px;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.207);
+}
+
+.div-texto-sobre-nos {
+  width: 46%;
+}
+
+.titulo-sobre-nos, .section-produtos h1 {
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.div-texto-sobre-nos p {
+  margin-bottom: 20px;
+  color: #6B5D52;
+}
+
+.div-gradient {
+  background-image: linear-gradient(to left, #D4AF37 ,#4A3428 );
+  height: 4px;
+  border-radius: 16px;
+  width: 100px;
+  margin: 20px 0;
+}
+
+.section-produtos {
+  text-align: center;
+  padding: 64px 100px;
+}
+
+.section-produtos .div-gradient {
+  margin: 20px auto;
+}
+
+.section-produtos h2 {
+  font-size: 16px;
+  font-weight:400;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.div-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+.div-card-produto, .div-card-produto img  {
+  width: 400px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.div-card-produto img {
+  height: 250px;
+  object-fit: cover;
+  transition-duration: 0.5s;
+}
+
+.div-card-produto:hover img, .div-card-produto:hover .div-img-yellow{
+  transform: scale(1.1);
+}
+
+.div-img-yellow {
+  transition-duration: 0.5s;
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+  width: 400px;
+}
+
+.div-card-produto:hover .div-img-yellow {
+  background-image: linear-gradient(to top, #d4af3743, #d4af3700); 
+  transition-duration: 0.5s;
+}
+
+
+.div-card-produto {
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.207);
+  transition-duration: 0.5s;
+}
+
+.div-card-produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.457);
+}
+
+.div-card-desc {
+  padding: 24px;
+  text-align: start;
+}
+
+.div-card-desc h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.div-card-desc p {
+  margin: 10px 0
+}
+
+.div-card-desc button {
+  width: 100%;
+  background-color: #4A3428;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 16px;
+  transition-duration: 0.3s;
+}
+
+.div-card-desc button:hover, .btn-header:hover{
+  background-color: #d4af37;
+  color:#4A3428;
+  cursor: pointer;
+}
